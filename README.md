@@ -1,2 +1,1 @@
-# Problem_annalect
- Lösung zum gestellten Problem im Bewerbungsgespräch
+#Erstellung einer Tabellenstruktur zur Mitarbeiterverwaltung
