@@ -17,9 +17,9 @@ insert into public.MA (Vorname, Nachname, Straße, Hausnummer, PLZ, ORT, Hierarc
 values 
 	('{"Max"}', '{"Mustermann"}', '{"Musterstr."}',	'{1}', '{12345}', '{"Musterstadt"}', '{"Manangement"}',	'{"GF"}', ARRAY[CURRENT_TIMESTAMP]),
 	('{"Wärter"}', '{"Karl"}', '{"Forstweg"}', '{5}', '{41450}', '{"Dormagen"}', '{"Bereichsleiter"}', '{"INFRA"}', ARRAY[CURRENT_TIMESTAMP]),
-	('{"Herr"}', '{"Tierlieb"}', '{"Römerstrasse"}', '{111}', '{41460}', '{"Neuss"}', '{"Angestellt"}', '{"HR"}', ARRAY[CURRENT_TIMESTAMP]),
+	('{"Herr"}', '{"Tierlieb"}', '{"Römerstrasse"}', '{111}', '{41460}', '{"Neuss"}', '{"Sachbearbeiter"}', '{"HR"}', ARRAY[CURRENT_TIMESTAMP]),
 	('{"John"}', '{"Doe"}', '{"Hauptstraße"}', '{555}', '{55555}', '{"Köln"}', '{"Bereichsleiter"}', '{"IT"}', ARRAY[CURRENT_TIMESTAMP]),
-	('{"Karla"}', '{"Kolumna"}', '{"Seitenstraße"}', '{321}', '{40213}', '{"Düsseldorf"}', '{"Angestellte"}', '{"IT"}', ARRAY[CURRENT_TIMESTAMP])
+	('{"Karla"}', '{"Kolumna"}', '{"Seitenstraße"}', '{321}', '{40213}', '{"Düsseldorf"}', '{"Sachbearbeiter"}', '{"IT"}', ARRAY[CURRENT_TIMESTAMP])
 ;
 
 -- Daten zu einem vorhandenen Array in der Tabelle hinzufügen
@@ -33,7 +33,7 @@ WHERE id = 3;
 -- Neuer Mitarbeiter
 insert into public.MA (Vorname, Nachname, Straße, Hausnummer, PLZ, ORT, Hierarchie, Bereich, Zeitstempel) 
 values 
-	('{"Norman"}', '{"Neumann"}', '{"Nordmanntannenallee"}', '{777}', '{75493}', '{"Umgebung"}', '{"Angestellter"}', '{"DATA"}', ARRAY[CURRENT_TIMESTAMP]);
+	('{"Norman"}', '{"Neumann"}', '{"Nordmanntannenallee"}', '{777}', '{75493}', '{"Umgebung"}', '{"Sachbearbeiter"}', '{"DATA"}', ARRAY[CURRENT_TIMESTAMP]);
 
 -- Neuer Mitarbeiter zieht um
 UPDATE public.MA
